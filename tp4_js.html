@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+
+<script type="text/javascript"><!--
+function somme() {
+document.form.resultat.value = (document.form.n1.value ) + (document.form.n2.value );
+}
+</script>
+</head>
+<body>
+ <form  id="form" name="form">
+ N1 :<input type='text'  name ="n1" id ="n1"  onChange="somme()" required> 
+ N1 :<input type='text'  name ="n2" id ="n2"  onChange="somme()" required>
+ Résultat :<input type='text'  name="resultat" id ="resultat"  onChange="somme()" readonly>
+ </form>
+</body>
+</html>

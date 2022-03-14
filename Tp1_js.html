@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>N 
+ <script type="text/javascript">
+function surfaceRectangle(){
+	var largeur; var longueur;
+
+	largeur=prompt("Quelle est la largeur du rectangle ?");
+	longueur=prompt("Quelle est la longueur du rectangle ?");
+
+	alert("La surface vaut "+longueur*largeur);
+	alert("Le périmètre vaut "+2*(Number(longueur)+Number(largeur))); //Il faut ici transformer les chaînes saisies en nombre, faute de quoi l'opérateur + agit comme une concaténation et non une somme
+}
+  </script>
+</head>
+<body >
+
+<h1>Écriture d'une fonction simple</h1>
+
+<p>Cliquez sur le bouton pour lancer la fonction&nbsp;: <button onclick="surfaceRectangle()">Lancer la fonction</button></p>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+  <title>Utilisation de switch et de l'objet Date</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <script type="text/javascript">
+
+function Aujourdhui(){
+	var dt= new Date;
+
+	jour=dt.getDay();
+	mois=dt.getMonth();
+	an=dt.getFullYear();
+	var jourFrancais ;
+
+	switch (jour) {
+		case 0 : jourFrancais="dimanche";break;
+		case 1 : jourFrancais="lundi";break;
+		case 2 : jourFrancais="mardi";break;
+		case 3 : jourFrancais="mercredi";break;
+		case 4 : jourFrancais="jeudi";break;
+		case 5 : jourFrancais="vendredi";break;
+		case 6 : jourFrancais="samedi";break;
+		default: jourFrancais="jour inexistant"; break;
+	}
+
+	alert("Nous sommes "+jourFrancais+" "+mois+" "+an+".");
+}
+  </script>
+</head>
+<body>
+
+<h1>Utilisation de switch et de l'objet Date</h1>
+
+<p>Cliquez sur le bouton pour lancer la fonction&nbsp;: <button onclick="Aujourdhui()">Lancer la fonction</button></p>
+
+</body>
+</html>
